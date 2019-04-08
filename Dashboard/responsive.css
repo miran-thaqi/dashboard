@@ -1,0 +1,172 @@
+
+@media only screen and (min-width: 986px){
+        .menu-point {
+       display: none;
+    }
+    .bars{
+        display: none;
+    }
+}
+@media only screen and (max-width: 986px) {
+    .sidebar{
+       margin-left: -260px;
+    }
+    #myChart{
+        padding-left: 10px;
+    }
+    .bars{
+        display: block;
+    }
+    .tools{
+        display: none ;
+        width: 100%;
+    }
+    .home-page{
+        margin: 0px;
+        min-width: 100%;
+        margin-left: 0px;
+        transition: all .5s ;
+    }
+    .nav{
+        padding-left: 0px;
+    }
+    .nav-tools{
+        padding: 20px;
+       
+        
+    }
+    .nav-tools .fa-ellipsis-v{
+        margin-right: 50px;
+    }
+    .charts-box{
+        flex-wrap: wrap;
+        
+    }
+    .chart1{
+        width: 100%;
+    }
+    .chart2,.chart3{
+        min-width: 45%;
+    }
+    .menu-point{
+        display: block;
+    }
+    .ts-box{
+       min-width: 45%;
+    }
+}
+
+
+
+@media only screen and (max-width: 815px) {
+    
+    .chart-box{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .chart1,.chart2,.chart3{
+        width: 100%;
+        height: auto;
+    }
+    
+    .task-sats{
+        flex-direction: column;
+    }
+    .ts-box {
+       width: auto;
+        
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .nofi-box{
+        flex-direction: column;
+    }
+    .nofi{
+        width: auto;
+    }
+    .nofi-box-top, .nofi-box-bottom{
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+    }
+    .nofi-places{
+        justify-content: center;
+        width: auto;
+        padding: 0px;
+    }
+    .nofi-places h2 p{
+        text-align: center;
+    }
+    
+    .bt-btn{
+        width: auto;
+    }
+    .div-nofi{
+        display: block;
+    }
+    
+    .user-box{
+        flex-direction: column;
+       
+    }
+    .user{
+        width: auto;
+        margin-left: 0px
+        
+    }
+    .user-profile{
+        
+        margin-right: 14px;
+    }
+    
+    .icon-box{
+       flex-wrap: nowrap;
+    }
+    
+    
+    .menu-item:last-child{
+    position: inherit;
+  
+    }
+    .c-u-e,.fn-ln,.adress,.city-coun-posc {
+   flex-direction: column;
+}
+    .input-label{
+        width: auto;
+    }
+    
+    #notify1, #notify2, #notify3, #notify4, #notify5, #notify6{
+        width:60%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer span{
+        text-align: center;
+        margin: 5px;
+    }
+    
+    .title-nofi p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .icons-box{
+        flex-direction: column;
+    }
+    
+    .title-nofi h2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:425px){
+   
+}

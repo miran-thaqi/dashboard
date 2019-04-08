@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+        <span>CT</span>
+            <span> CREATIVE TIM</span>
+        </div>
+        <div class="menu" id="menu">
+        <a href="index.html" class="menu-item active-menu"><i class="fas fa-cube"></i><span class="a">Dashboard</span></a>
+         <a class="menu-item" href="icon.html"><i class="fab fa-react"></i><span class="a">Icons</span></a>
+         <a class="menu-item" href="map.html"><i class="far fa-map"></i><span class="a">Map</span></a>
+         <a class="menu-item" href="notifications.html"><i class="far fa-bell"></i><span class="a">Notifications</span></a>
+        <a class="menu-item" href="user.html"><i class="far fa-user"></i><span class="a">User Profile</span></a>
+         <a class="menu-item" href="table.html"><i class="fas fa-list-ul"></i><span class="a">Table List</span></a>
+            <a class="menu-item" href="upgrade.html"><i class="fas fa-cloud-download-alt"></i><span class="a">Upgrade to Pro</span></a>
+        </div>
+        
+        </div>
+        
+        
+    <div class ="home-page" id="homePage">
+        <div class="dashboard-settings" id="dashbBtn">
+            <i class="fas fa-cog"></i>
+        </div>
+         <div class="dashboard-drop" id="dashb" >
+                      <h2>Sidebar Background</h2>
+                          <div class="sidebar-color">
+                          <div class ="colors color1" id="color1"></div>
+                           <div class ="colors color2" id="color2"></div>
+                            <div class ="colors color3" id="color3"></div>
+                            <div class ="colors color4" id="color4"></div>
+                            <div class ="colors color5" id="color5"></div>
+
+                          </div>
+                          <div class="download-btn"><a>Download Now</a></div>
+                          <div class="doc-btn"><a>Documention</a></div>
+                          <h2>THANK YOU FOR 95 SHARES!</h2>
+                          
+                          <div class="social-btn">
+                          <div class="twitter-btn social">
+                              <i class="fab fa-twitter"></i>
+                              <span>• 45</span>
+                              </div>
+                            <div class="fb-btn social">
+                                <i class="fab fa-facebook-f"></i>
+                              <span>• 50</span>
+                              </div>
+                          </div>
+                          
+                          <div class="rate">
+                            <button class="btn-rate"><i class="fas fa-star"></i>  Star</button>
+                              <span>49</span>
+                              </div>
+                        </div>
+        <!--  PHONE TOP MENU -->
+            <div class="nav-phone">
+            <div class="top-menu">
+                    <div class ="search-phone">
+                        <input type="text" placeholder="Search...">
+                       <div class="search-icon-phone"><i class="fas fa-search"></i></div> 
+                    </div>
+                    
+                <div class="top-menu-item stats"><i class="far fa-chart-bar"></i><a>Stats</a></div>
+                  <div class="some-actions">
+                      <div class="top-menu-item action" id="actionBtn"><i class="fas fa-globe-asia"></i><a>Some Action</a><i class="fas fa-sort-down" id="down-action"></i></div>
+                     <div class="action-drop" >
+                        <div class="action-item"><a>Action</a></div>
+                         <div class="action-item"><a>Another action</a></div>
+                        <div class="action-item"><a>Something else here</a></div>
+                      
+                        </div>
+                    </div>
+                      
+                      <div class="top-menu-item account"><i class="far fa-user"></i><a>Account</a></div>
+                    </div>
+                    
+                    
+                      </div>
+               
+            
+            <!--  END OF TOP MENU -->
+        <div class="nav">
+           
+            <div class="nav-tools">
+                <div class="bars" id="bars">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+                </div>
+               <span id="pageTitle">DASHBOARD</span>
+                <div class="tools">
+                    <div class ="search">
+                        <input type="text" placeholder="Search...">
+                       <div class="search-icon"><i class="fas fa-search"></i></div> 
+                    </div>
+                    <div class ="diagram-icon icon-tools"><i class="far fa-chart-bar"></i></div>
+                    <div class="lang-icon icon-tools" id="langBtn"><i class="fas fa-globe-asia"></i><i class="fas fa-sort-down" id="down"></i>
+                    <div class="lang-drop" id="lang-drop">
+                        <div class="lang-item"><a>Action</a></div>
+                         <div class="lang-item"><a>Another action</a></div>
+                        <div class="lang-item"><a>Something else here</a></div>
+                      
+                        </div>
+                    </div>
+                    <div class="log-in icon-tools"><i class="far fa-user"></i></div>
+                    
+                      
+                </div>
+                <div class="menu-point" ><i class="fas fa-ellipsis-v" style="color:white;" id="topMenuBtn"></i></div>
+                
+            </div>
+        <div class ="chart-cont">
+        <canvas id="myChart"></canvas>
+            </div>
+            </div>
+            
+        <div>           
+            <div class="charts-box">
+            <div class="chart chart1">
+                <div class="info-chart">
+                <span>Global Scales</span>
+                    <h2>Shipped Products</h2>
+                     </div>
+                     <div class="chart-settings " id="set-btn">
+                    <i class="fas fa-cog" id="sett-icon"></i>
+                    </div>
+                    
+                        <div class="settings-drop" id="set-drop">
+                        <div class="settings-item"><a>Action</a></div>
+                         <div class="settings-item"><a>Another action</a></div>
+                        <div class="settings-item"><a>Something else here</a></div>
+                        <div class="settings-item"><a>Remove Data</a></div>
+                        </div>
+                 
+                   
+                
+                <div class ="chart-box-cont chart1-box">
+        <canvas id="chart1"></canvas>
+            </div>
+                <span class="update"><i class="fas fa-sync"></i>Just Updated</span>
+                </div>
+                <div class="chart chart2">
+                    <div class="info-chart">
+                <span>2018 Scales</span>
+                    <h2>All products</h2>
+                     </div>
+                     <div class="chart-settings " id="set-btn2">
+                    <i class="fas fa-cog" id="sett-icon2"></i>
+                    </div>
+                    
+                        <div class="settings-drop2" id="set-drop2">
+                        <div class="settings-item2"><a>Action</a></div>
+                         <div class="settings-item2"><a>Another action</a></div>
+                        <div class="settings-item2"><a>Something else here</a></div>
+                        <div class="settings-item2"><a>Remove Data</a></div>
+                        </div>
+                 
+                   
+                
+                <div class ="chart-box-cont chart-box-cont2">
+        <canvas id="chart2"></canvas>
+            </div>
+                <span class="update"><i class="fas fa-sync"></i>Just Updated</span>
+                    
+                </div>
+                <div class=" chart chart3">
+                     <div class="info-chart">
+                <span>Email Statistics</span>
+                    <h2>24 Hours Performance</h2>
+                     </div>
+ <div class ="chart-box-cont chart-box-cont3">
+        <canvas id="chart3"></canvas>
+            </div>
+                <span class="update"><i class="far fa-clock"></i>Last 7 days</span>
+                    
+                </div>
+                </div>
+        </div>
+
+        
+            <div class ="task-sats">
+        
+                <div class=" ts-box task-b">
+                     <div class="info-ts">
+                <span>Backend Development</span>
+                    <h2>Task</h2>
+                     </div>
+                <div class="task-list">
+                    <div class="list">
+                    <div class="list-item list-item1">
+                        <label class="checkboxCont">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                    
+                    <span class="checkText">Sign contract for "What are conference organizers afraid of?</span>
+                        <div class="check-tools">
+                         <i class="fas fa-times close"></i>
+                        <i class="fas fa-wrench"></i>
+                              </div>
+                    
+                    </div>
+                          <div class="list-item list-item1">
+                 <label class="checkboxCont">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    <span class="checkText">Lines From Great Russian Literature? Or E-mails From My Boss?</span>
+                        <div class="check-tools">
+                         <i class="fas fa-times close"></i>
+                        <i class="fas fa-wrench"></i>
+                              </div>
+                    
+                    </div>
+                        
+                         <div class="list-item list-item1">
+                    <label class="checkboxCont">
+                            <input type="checkbox" checked>
+                            <span class="checkmark" ></span>
+                        </label>
+                             <label for="checkbox"></label>
+                    <span class="checkText">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</span>
+                        <div class="check-tools">
+                         <i class="fas fa-times close"></i>
+                        <i class="fas fa-wrench"></i>
+                              </div>
+                    
+                    </div>
+                        </div>
+                    </div>
+                <span class="update"><i class="fas fa-sync " id="updateIcon"></i>Updated 3 minutes ago</span>
+                    
+                </div>
+                <div class=" ts-box sats-s">
+                     <div class="info-ts">
+                <span>All Persons List</span>
+                    <h2>Employees Stats</h2>
+                     </div>
+                    <div class="table-list">
+                    <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Salary</th>
+                        </tr>
+                        <tr>
+                        <td>Dakota Rice</td>
+                        <td>Niger</td>
+                        <td>Oud-Turnhout</td>
+                        <td>$36,738</td>
+                       
+                        </tr>
+                        <tr>
+                        <td>Minerva Hooper</td>
+                         <td>Curaçao</td>
+                        <td>Sinaai-Waas</td>
+                        <td>$23,789</td>
+                        </tr>
+                        <tr>
+                         <td>Sage Rodriguez</td>
+                        <td>Netherlands</td>
+                        <td>Baileux</td>
+                        <td>$56,142</td>
+                        </tr>
+                        <tr>
+                        <td>Doris Greene</td>
+                        <td>Malawi</td>
+                        <td>Feldkirchen in Kärnten</td>
+                        <td>$63,542</td>
+                        </tr>
+                        <tr>
+                         <td>Mason Porter</td>
+                        <td>Chile</td>
+                        <td>Gloucester</td>
+                        <td>$78,615</td>
+                        </tr>
+                    </table>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="footer">
+        
+            <div class="footer-links">
+                <a>Creative Tim</a>
+                <a>About Us</a>
+                <a>Blog</a>
+                </div>
+                
+                <span>© 2018, Designed by <a>Invision</a>. Coded by <a>Creative Tim</a>.</span>
+        </div>
+            </div> <!-- HOMEPAGE END  -->
+    
+    
+    <script src="chart.js"></script>
+     <script src="chart1.js"></script>
+     <script src="chart2.js"></script>
+      <script src="chart3.js"></script>
+        <script src="sidebar.js"></script>
+        <script src="home.js"></script>
+
+
+    
+    </body>
+    
+</html>

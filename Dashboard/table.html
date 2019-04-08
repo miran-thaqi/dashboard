@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+        <span>CT</span>
+            <span> CREATIVE TIM</span>
+        </div>
+        <div class="menu" id="menu">
+        <a href="index.html" class="menu-item"><i class="fas fa-cube"></i><span class="a">Dashboard</span></a>
+         <a class="menu-item" href="icon.html"><i class="fab fa-react"></i><span class="a">Icons</span></a>
+         <a class="menu-item" href="map.html"><i class="far fa-map"></i><span class="a">Map</span></a>
+         <a class="menu-item" href="notifications.html"><i class="far fa-bell"></i><span class="a">Notifications</span></a>
+        <a class="menu-item" href="user.html"><i class="far fa-user"></i><span class="a">User Profile</span></a>
+         <a class="menu-item active-menu" href="table.html"><i class="fas fa-list-ul"></i><span class="a">Table List</span></a>
+            <a class="menu-item" href="upgrade.html"><i class="fas fa-cloud-download-alt"></i><span class="a">Upgrade to Pro</span></a>
+        </div>
+        
+        </div>
+        
+        
+    <div class ="home-page home-page-icon" id="homePage">
+        <div class="dashboard-settings" id="dashbBtn">
+            <i class="fas fa-cog"></i>
+        </div>
+         <div class="dashboard-drop" >
+                      <h2>Sidebar Background</h2>
+                          <div class="sidebar-color">
+                          <div class ="colors color1" id="color1"></div>
+                           <div class ="colors color2" id="color2"></div>
+                            <div class ="colors color3" id="color3"></div>
+                            <div class ="colors color4" id="color4"></div>
+                            <div class ="colors color5" id="color5"></div>
+
+                          </div>
+                          <div class="download-btn"><a>Download Now</a></div>
+                          <div class="doc-btn"><a>Documention</a></div>
+                          <h2>THANK YOU FOR 95 SHARES!</h2>
+                          
+                          <div class="social-btn">
+                          <div class="twitter-btn social">
+                              <i class="fab fa-twitter"></i>
+                              <span>• 45</span>
+                              </div>
+                            <div class="fb-btn social">
+                                <i class="fab fa-facebook-f"></i>
+                              <span>• 50</span>
+                              </div>
+                          </div>
+                          
+                          <div class="rate">
+                            <button class="btn-rate"><i class="fas fa-star"></i>  Star</button>
+                              <span>49</span>
+                              </div>
+                        </div>
+        <!--  PHONE TOP MENU -->
+            <div class="nav-phone">
+            <div class="top-menu">
+                    <div class ="search-phone">
+                        <input type="text" placeholder="Search...">
+                       <div class="search-icon-phone"><i class="fas fa-search"></i></div> 
+                    </div>
+                    
+                <div class="top-menu-item stats"><i class="far fa-chart-bar"></i><a>Stats</a></div>
+                  <div class="some-actions">
+                      <div class="top-menu-item action" id="actionBtn"><i class="fas fa-globe-asia"></i><a>Some Action</a><i class="fas fa-sort-down" id="down-action"></i></div>
+                     <div class="action-drop" >
+                        <div class="action-item"><a>Action</a></div>
+                         <div class="action-item"><a>Another action</a></div>
+                        <div class="action-item"><a>Something else here</a></div>
+                      
+                        </div>
+                    </div>
+                      
+                      <div class="top-menu-item account"><i class="far fa-user"></i><a>Account</a></div>
+                    </div>
+                    
+                    
+                      
+                </div>
+            
+            <!--  END OF TOP MENU -->
+        <div class="nav-icon nav-table">
+            <div class="nav-tools">
+                 <div class="bars" id="bars">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+                </div>
+                <span id="pageTitle">TABLE LIST</span>
+                <div class="tools">
+                    <div class ="search">
+                        <input type="text" placeholder="Search...">
+                       <div class="search-icon"><i class="fas fa-search"></i></div> 
+                    </div>
+                    <div class ="diagram-icon icon-tools"><i class="far fa-chart-bar"></i></div>
+                    <div class="lang-icon icon-tools" id="langBtn"><i class="fas fa-globe-asia"></i><i class="fas fa-sort-down" id="down"></i>
+                    <div class="lang-drop" >
+                        <div class="lang-item"><a>Action</a></div>
+                         <div class="lang-item"><a>Another action</a></div>
+                        <div class="lang-item"><a>Something else here</a></div>
+                      
+                        </div>
+                    </div>
+                    <div class="log-in icon-tools"><i class="far fa-user"></i></div>
+                    
+                      
+                </div>
+                 <div class="menu-point" ><i class="fas fa-ellipsis-v" style="color:white;" id="topMenuBtn"></i></div>
+            </div>
+            </div>
+        
+           
+                <div class= "table-content">
+                <span>Simple Table</span>
+        
+            <div class="table-list">
+                    <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th class="salary">Salary</th>
+                        </tr>
+                        <tr>
+                        <td>Dakota Rice</td>
+                        <td>Niger</td>
+                        <td>Oud-Turnhout</td>
+                        <td>$36,738</td>
+                       
+                        </tr>
+                        <tr>
+                        <td>Minerva Hooper</td>
+                         <td>Curaçao</td>
+                        <td>Sinaai-Waas</td>
+                        <td>$23,789</td>
+                        </tr>
+                        <tr>
+                         <td>Sage Rodriguez</td>
+                        <td>Netherlands</td>
+                        <td>Baileux</td>
+                        <td>$56,142</td>
+                        </tr>
+                          <tr>
+                         <td>Philip Chaney</td>
+                        <td>Korea, South</td>
+                        <td>Overland Park</td>
+                        <td>$38,735</td>
+                        </tr>
+                        <tr>
+                        <td>Doris Greene</td>
+                        <td>Malawi</td>
+                        <td>Feldkirchen in Kärnten</td>
+                        <td>$63,542</td>
+                        </tr>
+                        <tr>
+                         <td>Mason Porter</td>
+                        <td>Chile</td>
+                        <td>Gloucester</td>
+                        <td>$78,615</td>
+                        </tr>
+                         <tr>
+                         <td>Jon Porter</td>
+                        <td>Portugal</td>
+                        <td>Gloucester</td>
+                        <td>$98,615</td>
+                        </tr>
+                    </table>
+                        </div>
+                    
+            </div> <!-- icon content end -->
+         <div class="table-list2">
+             <h2>Table on Plain Background</h2>
+                <span>Here Is A Subtitle For This Table</span>
+        <div class="table-list ">
+           
+                    <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th class="salary">Salary</th>
+                        </tr>
+                        <tr>
+                        <td>Dakota Rice</td>
+                        <td>Niger</td>
+                        <td>Oud-Turnhout</td>
+                        <td>$36,738</td>
+                       
+                        </tr>
+                        <tr>
+                        <td>Minerva Hooper</td>
+                         <td>Curaçao</td>
+                        <td>Sinaai-Waas</td>
+                        <td>$23,789</td>
+                        </tr>
+                        <tr>
+                         <td>Sage Rodriguez</td>
+                        <td>Netherlands</td>
+                        <td>Baileux</td>
+                        <td>$56,142</td>
+                        </tr>
+                          <tr>
+                         <td>Philip Chaney</td>
+                        <td>Korea, South</td>
+                        <td>Overland Park</td>
+                        <td>$38,735</td>
+                        </tr>
+                        <tr>
+                        <td>Doris Greene</td>
+                        <td>Malawi</td>
+                        <td>Feldkirchen in Kärnten</td>
+                        <td>$63,542</td>
+                        </tr>
+                        <tr>
+                         <td>Mason Porter</td>
+                        <td>Chile</td>
+                        <td>Gloucester</td>
+                        <td>$78,615</td>
+                        </tr>
+                         <tr>
+                         <td>Jon Porter</td>
+                        <td>Portugal</td>
+                        <td>Gloucester</td>
+                        <td>$98,615</td>
+                        </tr>
+                    </table>
+                        </div>   
+            </div>  
+        <div class="footer">
+        
+            <div class="footer-links">
+                <a>Creative Tim</a>
+                <a>About Us</a>
+                <a>Blog</a>
+                </div>
+                
+                <span>© 2018, Designed by <a>Invision</a>. Coded by <a>Creative Tim</a>.</span>
+        </div>
+            </div> <!-- HOMEPAGE END  -->
+    
+    
+  
+        <script src="sidebar.js"></script>
+        <script src="home.js"></script>
+
+
+    
+    </body>
+    
+</html>
